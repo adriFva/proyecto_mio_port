@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Virtual</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+<!-- Animaciones CSS -->
+   <link rel="stylesheet" href="animaciones.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="misFunciones.js"></script>
+<!-- Enlace a logotipos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body class="container-fluid" style="font-family: inherit">
+<!-- header de prueba -->
+    <header class="bg-black row" style="padding: 20px 0">
+<!--  Logotipo de Web -->
+        <div style="padding: 0 5%; cursor: pointer;" class="col-2" onclick="pgInicio()">
+            <img src="img/logo.png"  alt="" style="width: 60px;">
+        </div>
+<!-- Navegador central -->
+        <nav class="col-9" style="padding:0 15%;">
+            <ul style="list-style-type: none;margin: 10px 0;" class="row">
+                <li class="col-sm"><a id="pagTrabaja" class="text-light" style="text-decoration: none;" href="">Trabaja con nosotros</a></li>
+                <li class="col-sm"><a id="pagTalent" class="text-light" style="text-decoration: none;" href="">Nuestro talento</a></li>
+                <li class="col-sm"><a id="pagAbout" class="text-light" style="text-decoration: none;" href="">Quienes somos</a></li>
+            </ul>
+        </nav>
+<!-- Iconos de Contacto y Login  -->
+        <div class="col-1 row">
+<!-- Icono Contacto que lleva a pagina de mensaje -->
+            <a class="col-4" id="pagContact" href=""><i style="font-size: 30px;" class="bi bi-telephone-fill text-light"></i></a>
+<!-- Icono de Login que abre ventana de Frm_Login de Login -->
+            <div style="padding: 0 30%;" class="col-6">
+              <button style="background: none; border: none;" class="dropdown-toggle" data-bs-toggle="dropdown">
+                <a  href=""><i style="font-size: 30px;" class="bi bi-person text-light"></i></a>
+              </button>
+              <form style="width: 20%; height: auto; background-color:rgb(37, 37, 37);" action="" class="dropdown-menu dropdown-menu-end text-light text-center">
+                <p class="h4"><b> Iniciar Sesion</b></p>
+                <label for="usu">Usuario</label><br>
+                <input type="text" id="usu" name="usuario"><br><br>
+
+                <label for="emailUsu">Correo Electronico</label><br>
+                <input type="text" id="emailUsu" name="email"><br><br>
+                <input type="button" value=" Entrar" class="btn btn-primary actived">
+                <hr class="dropdown-divider">
+                <p>¿No tienes cuenta?<a style="text-decoration: none; color: rgb(67, 235, 235); cursor: pointer;" onclick="pgRegistro()">Registrate</a></div></p>
+              </form>
+            </div>
+        </div>
+
+    </header>
+<!-- Main que cambiara con js -->
+
+
+<!-- MAIN PAGINA PERFILES -->
+<main>
+  <section class=" text-center">
+    <article container-xxl>
+      <p style="font-size: 55px;"><b>Hecha un ojo a nuestros grandes talentos</b> </p>
+      <p class="pt-3 h3">Si te enteresa trabajar con alguno podras acceder a su <br> informacion laboral</p>
+    </article>
+    <article >
+      <p class="h2"><b> Los más Destacados</b></p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<!-- Botones de Carruse -->
+        <div class="carousel-indicators">
+          <button style=" width: 20px; height: 20px; border-radius: 50%; background-color: rgb(37, 37, 37);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button style=" width: 20px; height: 20px; border-radius: 50%; background-color: rgb(37, 37, 37);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button style=" width: 20px; height: 20px; border-radius: 50%; background-color: rgb(37, 37, 37);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+<!--  Imagenes y Texto de carrusel -->
+        <div style="width: 100%; border: 2px solid red;" class=" carousel-inner text-center">
+          <div class="carousel-item active ">
+            <div style="border: 2px solid green;" class="row">
+              <div  class="col-6">
+               <img style="width: 90%;object-fit: cover; height: 500px; opacity: 80%;" src="img/fondoCarruselFotografo.jpg" class="w-100" alt="My Html">
+              </div>
+              <div class="col-6">
+               <img style="width: 90%;object-fit: cover; height: 500px; opacity: 80%;" src="img/fondoCarruselFotografo.jpg" class="w-100" alt="My Html">
+              </div>
+              
+            </div>
+            <div style="border: 2px solid green;" class="row">
+              <div class="carousel-caption  text-dark ms-5 col-2">
+                <h1 style="text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Ismael Codina</b></h1>
+                <p style="font-size: 20px; text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Fotografo</b></p>
+              </div>
+      
+              <div class="carousel-caption  text-dark col-12">
+                <h1  style="text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Ismael Codina</b></h1>
+                <p style="font-size: 20px; text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Fotografo</b></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div style="border: 2px solid green;" class="row">
+              <div  class="col-6">
+               <img style="width: 90%;object-fit: cover; height: 500px; opacity: 80%;" src="img/fondoCarruselFotografo.jpg" class="w-100" alt="My Html">
+              </div>
+              <div class="col-6">
+               <img style="width: 90%;object-fit: cover; height: 500px; opacity: 80%;" src="img/fondoCarruselFotografo.jpg" class="w-100" alt="My Html">
+              </div>
+              
+            </div>
+            <div style="border: 2px solid green;" class="row">
+              <div class="carousel-caption  text-dark ms-5 col-2">
+                <h1 style="text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Ismael Codina</b></h1>
+                <p style="font-size: 20px; text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Fotografo</b></p>
+              </div>
+      
+              <div class="carousel-caption  text-dark col-12">
+                <h1  style="text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Ismael Codina</b></h1>
+                <p style="font-size: 20px; text-shadow: 0 0 5px #a4f1ff, 0 0 10px #0f2b30;"><b>Fotografo</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <p class="h2"><b>Fotografos</b></p>
+    </article>
+    <article>
+      <p class="h2"><b> Diseñadores Graficos</b></p>
+    </article>
+    <article>
+      <p class="h2"><b>Website</b></p>
+    </article>
+  </section>
+</main>
+
+    <footer style=" padding: 20px 0;"  class="bg-dark text-light row">
+        <div class="col-6 text-center">
+          <img src="img/logo.png" alt="" style="width: 60px;">
+          <p style="margin: 5% 0;"class="h4 text-light">Portfolio Virtual</p>
+        </div>
+        <div class="col-6  text-center row">
+          <nav class="col-6">
+            <ul style="list-style-type: none;" class="text-start">
+              <p class="h5"><b> Productos</b></p>
+              <li><a id="pagTrabaja" style="text-decoration: none;" class="text-light" href="">Trabaja con nosotros</a></li>
+              <li><a id="pagTalent" style="text-decoration: none;" class="text-light" href="">Nuestro talento</a></li>
+              <li><a id="pagAbout"style="text-decoration: none;" class="text-light" href="">Quienes somos</a></li>
+            </ul>
+          </nav>
+          <nav class="col-6">
+             <ul style="list-style-type: none;" class="text-start">
+              <p class="h5 "><b>Siguemos en</b> </p>
+              <li class="row">
+                <a class="col-1" style="text-decoration: none;" href=""><i style="font-size: 20px;" class="bi bi-facebook text-light"></i></a>
+                <p class="col-6">Facebook</p>
+              </li>
+              <li class="row">
+                <a class="col-1" style="text-decoration: none;" href=""> <i style="font-size: 20px;" class="bi bi-instagram text-light"></i></a>
+                <p class="col-6">Instagram</p>
+              </li>
+              <li class="row">
+                <a class="col-1" style="text-decoration: none;" href=""><i style="font-size: 20px;" class="bi bi-linkedin text-light"></i></a>
+                <p class="col-6">Linkedin</p>
+              </li>
+              <li class="row">
+                <a class="col-1" style="text-decoration: none;" href=""><i style="font-size: 20px;" class="bi bi-twitter text-light"></i></a>
+                <p class="col-6">Twitter</p>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="text-light text-center">
+          <p>Copyright © 2022 Yerai, Victor,Adriana, Jaime y Jose Ramon</p>
+        </div>
+    </footer>
+</body>
+</html>

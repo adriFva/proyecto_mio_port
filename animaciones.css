@@ -1,0 +1,17 @@
+.texto-animado{
+    opacity: 100%;
+    animation: opacidad 10s;
+  }
+.anima-fondo{
+    background-color: #0f2b30;
+    animation: animaFondo 10s infinite alternate-reverse;
+  }
+  @keyframes animaFondo {
+    0% {background-color:#0f2b30;}
+    50% {background-color:#66004d}
+    100%{background-color:#385a12;}
+  }
+  @keyframes opacidad {
+    from {opacity:0%;}
+    to {opacity:100%}
+  }
